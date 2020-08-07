@@ -1,0 +1,37 @@
+.product-card {
+  height: 100%;
+  cursor: pointer;
+
+  img {
+    width: auto;
+    height: 205px;
+  }
+}
+
+.no-data {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.card-body {
+  position: relative;
+
+  a,
+  button {
+    position: absolute;
+    bottom: 10px;
+
+    &.btn-danger {
+      left: 70px;
+    }
+  }
+
+  p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin-bottom: 2rem;
+  }
+}
